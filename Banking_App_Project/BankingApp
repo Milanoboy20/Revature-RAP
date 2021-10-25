@@ -1,0 +1,45 @@
+create schema bankApp;
+
+
+create table bankapp.appUsers (
+	user_ID      INTEGER,
+	constraint cusIDs foreign key (user_ID) references bankapp.customers(cus_ID), 
+	/* constraint empIDs foreign key (user_ID) references bankapp.employees(emp_ID), 
+	constraint adminIDs foreign key (user_ID) references bankapp.sysAdmin(admin_ID),
+	*/
+	
+	user_name    VARCHAR(200),
+	user_address VARCHAR(200),
+	user_email   VARCHAR(100) unique not null,
+	user_phone   NUMERIC	
+);
+
+insert into appusers values ( default ,'samad', 'woodycrest ave', 'samad@yahoo.com', 9292789621);
+
+create table bankapp.customers (
+	cus_ID      SERIAL primary key,
+	cus_stateID VARCHAR(100),
+	cus_SS      numeric unique not null
+);
+
+insert into bankapp.customers values (DEFAULT, '1234ABC', 1234);
+insert into bankapp.customers values (DEFAULT, '2345ABC', 5678);
+
+
+create table bankapp.employees (
+	emp_ID INTEGER primary key,
+	emp_title VARCHAR(100),
+	emp_level VARCHAR,
+	emp_salary NUMERIC
+);
+
+create table bankapp.sysAdmin (
+	admin_ID     INTEGER primary key,
+	admin_level  VARCHAR,
+	admin_salary NUMERIC
+);
+
+create table bankapp.login (
+	username VARCHAR(100),
+	psswd    VARCHAR(100)
+);
