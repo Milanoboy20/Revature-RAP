@@ -3,7 +3,8 @@ package com.revature.sadat.models;
 
 
 public class SystemAdmin {
-	private Integer admin_ID, admin_salary;
+	private Integer admin_ID;
+	private Double admin_salary;
 	private String admin_level;
 	
 	
@@ -11,7 +12,7 @@ public class SystemAdmin {
 		super();
 	}
 	
-	public SystemAdmin(Integer admin_ID, Integer admin_salary, String admin_level) {
+	public SystemAdmin(Integer admin_ID, Double admin_salary, String admin_level) {
 		super();
 		this.admin_ID = admin_ID;
 		this.admin_salary = admin_salary;
@@ -26,11 +27,11 @@ public class SystemAdmin {
 		this.admin_ID = admin_ID;
 	}
 
-	public Integer getAdmin_salary() {
+	public Double getAdmin_salary() {
 		return admin_salary;
 	}
 
-	public void setAdmin_salary(Integer admin_salary) {
+	public void setAdmin_salary(Double admin_salary) {
 		this.admin_salary = admin_salary;
 	}
 
@@ -44,7 +45,7 @@ public class SystemAdmin {
 
 	@Override
 	public String toString() {
-		return "Admin [admin_ID=" + admin_ID + ", admin_salary=" + admin_salary + ", admin_level=" + admin_level + "]";
+		return "Admin [Admin ID: " + admin_ID + ", Salary: " + admin_salary + ", Level: " + admin_level + "]";
 	}
 
 	@Override

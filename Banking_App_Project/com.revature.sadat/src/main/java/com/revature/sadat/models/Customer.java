@@ -42,7 +42,7 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return "Customer [cus_ID=" + cus_ID + ", stateID=" + stateID + ", socialSec=" + socialSec + "]";
+		return "Customer [Cus_ID: " + cus_ID + ", StateID: " + stateID + ", SocialSec: " + socialSec + "]";
 	}
 
 	@Override

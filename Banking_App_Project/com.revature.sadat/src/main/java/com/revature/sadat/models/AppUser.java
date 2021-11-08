@@ -17,6 +17,15 @@ public class AppUser {
 		this.email = email;
 		this.user_ID = user_ID;
 	}
+	
+	public AppUser(String name, String phone, String address, String title, String email) {
+		super();
+		this.name = name;
+		this.phone = phone;
+		this.address = address;
+		this.title = title;
+		this.email = email;		
+	}
 
 
 	public String getName() {
@@ -81,8 +90,8 @@ public class AppUser {
 
 	@Override
 	public String toString() {
-		return "AppUser [name=" + name + ", phone=" + phone + ", address=" + address + ", title=" + title + ", email="
-				+ email + ", user_ID=" + user_ID + "]";
+		return "AppUser [Name:  " + name + ", Phone:  " + phone + ", Address:  " + address + ", Title:  " + title + ", Email:  "
+				+ email + ", User_ID: " + user_ID + "]";
 	}
 
 

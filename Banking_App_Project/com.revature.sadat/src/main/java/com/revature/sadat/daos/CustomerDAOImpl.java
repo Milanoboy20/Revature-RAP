@@ -4,162 +4,141 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.revature.sadat.models.Account;
+
 import com.revature.sadat.models.Customer;
-import com.revature.sadat.models.Employee;
 import com.revature.sadat.utilities.ConnectionUtility;
 
 public class CustomerDAOImpl implements CustomerDAO {
 
 	@Override
-	public boolean createAccount(Customer cus, Double startBalance, String accType) {
+	public boolean insertCustomer(Customer cus) {
 		PreparedStatement ps = null;
-		
-		try(Connection connect = ConnectionUtility.getConnection("samad", "milan")){
-			String query = "INSERT INTO bankapp.accounts VALUES(?, ?, ?);";
-			ps = connect.prepareStatement(query);
-			
-			ps.setInt(1, cus.getCus_ID());			
-			ps.setString(2, accType);
-			ps.setDouble(3, startBalance);
-			ps.executeUpdate();
-			
-		}catch(SQLException e) {
-			System.out.println("Unsuccessful!");
-			e.printStackTrace();
-			return false;
-		}
-//		Account acc = new Account(startBalance, accType);
-		
-		
-		return true;
-	}
-
-	@Override
-	public boolean deposit(Customer cus, String accType, Double amount) {
-		PreparedStatement ps = null;
-		
-		try(Connection connect = ConnectionUtility.getConnection("samad", "milan")){
-			String query = "UPDATE bankapp.accounts SET "				
-				+ "cus_ID=?, "
-				+ "startBalance=startBalance + ? "
-				+ "WHERE accType=?";
-			
-			ps = connect.prepareStatement(query);
-			ps.setString(3, accType);
-			ps.setDouble(2, amount);
-			ps.setInt(1, cus.getCus_ID());
-						
-			ps.executeUpdate();
-			
-		}catch(SQLException e) {
-			System.out.println("Unsuccessful!");
-			e.printStackTrace();
-			return false;
-		}
-		return true;
-	}
-
-	@Override
-	public boolean withdraw(Customer cus, String accType, Double amount) {
-		PreparedStatement ps = null;
-		
-		try(Connection connect = ConnectionUtility.getConnection("samad", "milan")){
-			String query = "UPDATE bankapp.accounts SET "				
-				+ "cus_ID=?, "
-				+ "startBalance=startBalance - ? "
-				+ "WHERE accType=?";
-			
-			ps = connect.prepareStatement(query);
-			ps.setString(3, accType);
-			ps.setDouble(2, amount);
-			ps.setInt(1, cus.getCus_ID());
-						
-			ps.executeUpdate();
-			
-		}catch(SQLException e) {
-			System.out.println("Unsuccessful!");
-			e.printStackTrace();
-			return false;
-		}
-		return true;
-	}
-
-	@Override
-	public void send(Customer cus1, Customer cus2, Double amount, String accType) {
-		Double sendAmount;
-//		try(Connection connect = ConnectionUtility.getConnection("samad", "milan")){
-			withdraw(cus1, "Checking", amount);
-			deposit(cus2, accType, amount);
-//		}catch(SQLException e) {
-//			e.printStackTrace();
-//		}
-//		return false;
-	}
-
-	@Override
-	public Account getAccount(Customer cus, String accType) {
-		Account acc = null;
-		for(int i = 0; i < allAccounts(cus.getCus_ID()).size(); i++) {
-			if(allAccounts(cus.getCus_ID()).get(i).getAccType().equalsIgnoreCase(accType))
-				acc = allAccounts(cus.getCus_ID()).get(i);
-		}
-		
-		return acc;
-	}
-
-	@Override
-	public List<Account> allAccounts(Integer id) {
-		PreparedStatement st = null;
 		ResultSet res = null;
-		List<Account> acc = null;
 		
-		try(Connection connect = ConnectionUtility.getConnection("samad", "milan")){
-			String query = "SELECT * FROM bankapp.accounts WHERE cus_ID=?";
-			st = connect.prepareStatement(query);
-			st.setInt(1, id);
-//			st.executeUpdate();
+		try(Connection con = ConnectionUtility.getConnection()){
+			String query = "INSERT INTO bankapp.customers VALUES(?,?,?);";
+			ps = con.prepareStatement(query);
 			
-			res = st.executeQuery();
-			acc = new ArrayList<Account>();
+			ps.setInt(1, cus.getCus_ID());
+			ps.setString(2, cus.getStateID());
+			ps.setInt(3, cus.getSocialSec());
+			
+			ps.executeUpdate();
+			
+			
+		} catch(SQLException e) {
+			System.out.println("Connection Unsuccessful!");
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+	
+	
+
+	@Override
+	public Customer selectByID(Integer id) {
+		PreparedStatement ps = null;
+		ResultSet res = null;
+		Customer cus = null;
+		
+		try (Connection connect = ConnectionUtility.getConnection()){
+			String query = "SELECT * FROM bankapp.customers WHERE cus_id=?";
+			ps = connect.prepareStatement(query);
+			
+			ps.setInt(1, id);
+			res = ps.executeQuery();
 			
 			while(res.next()) {
-				Account ac = new Account();
-				ac.setAccType(res.getString(2));
-				ac.setStartBalance(res.getDouble(3));
-				
-				acc.add(ac);
+				cus = new Customer();
+				cus.setCus_ID(res.getInt(1));
+				cus.setStateID(res.getString(2));
+				cus.setSocialSec(res.getInt(3));				
 			}
 			
+		} catch (SQLException e) {
+			System.out.println("Connection Unsuccessful!");
+			e.printStackTrace();
+		}
+		
+		return cus;
+	}
+
+	@Override
+	public boolean updateCustomer(Customer cus) {
+		PreparedStatement ps = null;
+		
+		try(Connection connect = ConnectionUtility.getConnection()){
+			String query = "UPDATE bankapp.customers SET" 				
+				+ " cus_stateid=?,"
+				+ " cus_ss=?"
+				+ " WHERE cus_id=?";
+			ps = connect.prepareStatement(query);
+						
+			ps.setString(1, cus.getStateID());
+			ps.setInt(2, cus.getSocialSec());
+			ps.setInt(3, cus.getCus_ID());			
+			ps.executeUpdate();
+			
+		}catch(SQLException e) {
+			System.out.println("Connection Unsuccessful!");
+			e.printStackTrace();
+			return false;
+		}
+		
+		return true;
+	}
+
+	@Override
+	public boolean removeCustomer(Integer id) {
+PreparedStatement ps = null;
+		
+		try(Connection connect = ConnectionUtility.getConnection()){
+			String query = "DELETE FROM bankapp.customers WHERE cus_id=?";
+			ps = connect.prepareStatement(query);
+			
+			ps.setInt(1, id);
+			ps.executeUpdate();
+			
+		}catch(SQLException e) {
+			System.out.println("Connection Unsuccessful!");
+			e.printStackTrace();
+			return false;
+		}
+		
+		return true;	
+	}
+
+	@Override
+	public List<Customer> allCustomers() {
+		Statement st = null;
+		ResultSet res = null;
+		List<Customer> cusList = null;
+		
+		try(Connection connect = ConnectionUtility.getConnection()){
+			String query = "SELECT * FROM bankapp.customers";
+			st = connect.createStatement();
+			res = st.executeQuery(query);
+			cusList = new ArrayList<Customer>();
+			
+			while(res.next()) {
+				Customer cus = new Customer();
+				cus.setCus_ID(res.getInt(1));
+				cus.setStateID(res.getString(2));
+				cus.setSocialSec(res.getInt(3));				
+				
+				cusList.add(cus);
+			}			
 			
 		} catch (SQLException e){
 			System.out.println("Connection Unsuccessful!");
 			e.printStackTrace();
 		}
 		
-		return acc;
-		
+		return cusList;
 	}
 
-	@Override
-	public boolean deleteAccount(Account acc, Customer cus, Double balance) {
-		PreparedStatement ps = null;
-		
-		try(Connection con = ConnectionUtility.getConnection("samad", "milan")){
-			String query = "DELETE FROM bankapp.accounts WHERE cus_ID=? AND accType=? AND startBalance=?";
-			ps = con.prepareStatement(query);
-			ps.setInt(1, cus.getCus_ID());
-			ps.setString(2, acc.getAccType());
-			ps.setDouble(3, balance);
-			ps.executeUpdate();
-			
-		}catch(SQLException e) {
-			
-			e.printStackTrace();
-			return false;
-		}
-		return true;
-	}
+	
 	
 
 }

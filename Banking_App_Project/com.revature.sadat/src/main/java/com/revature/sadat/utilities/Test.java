@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class Test {
 
 	public static void main(String[] args) {
-		try(Connection connect = ConnectionUtility.getConnection("employee", "pass")) {			
+		try(Connection connect = ConnectionUtility.getConnection()) {			
 			System.out.println("Connection successful!");
 			
 		} catch (SQLException e) {

@@ -14,7 +14,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 		PreparedStatement ps = null;
 		ResultSet res = null;
 		
-		try(Connection con = ConnectionUtility.getConnection("samad", "milan")){
+		try(Connection con = ConnectionUtility.getConnection()){
 			String query = "INSERT INTO bankapp.employees VALUES(2,?,?,?);";
 			ps = con.prepareStatement(query);
 			
@@ -38,9 +38,10 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 	public Employee selectByID(Integer id) {
 		PreparedStatement ps = null;
 		ResultSet res = null;
-		Employee emp = null;
+		ResultSet res2 = null;
+		Employee emp = new Employee();
 		
-		try (Connection connect = ConnectionUtility.getConnection("samad", "milan")){
+		try (Connection connect = ConnectionUtility.getConnection()){
 			String query = "SELECT * FROM bankapp.employees WHERE emp_id=?";
 			ps = connect.prepareStatement(query);
 			
@@ -48,11 +49,20 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 			res = ps.executeQuery();
 			
 			while(res.next()) {
-				emp = new Employee();
+//				emp = new Employee();
 				emp.setEmp_ID(res.getInt(1));
 				emp.setEmp_title(res.getString(2));
 				emp.setEmp_level(res.getString(3));
 				emp.setEmp_salary(res.getDouble(4));
+			}
+			
+			String query2 = "SELECT * FROM bankapp.login WHERE login_id=?";
+			ps = connect.prepareStatement(query2);
+			ps.setInt(1, emp.getEmp_ID());
+			
+			res = ps.executeQuery();
+			while(res.next()) {
+				emp.setLogin_ID(res.getInt(1));
 			}
 			
 		} catch (SQLException e) {
@@ -67,7 +77,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 	public boolean updateEmployee(Employee emp) {
 		PreparedStatement ps = null;
 		
-		try(Connection connect = ConnectionUtility.getConnection("samad", "milan")){
+		try(Connection connect = ConnectionUtility.getConnection()){
 			String query = "UPDATE bankapp.employees SET" 				
 				+ " emp_title=?,"
 				+ " emp_level=?,"
@@ -95,7 +105,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 	public boolean removeEmployee(Integer id) {
 		PreparedStatement ps = null;
 		
-		try(Connection connect = ConnectionUtility.getConnection("samad", "milan")){
+		try(Connection connect = ConnectionUtility.getConnection()){
 			String query = "DELETE FROM bankapp.employees WHERE emp_id=?";
 			ps = connect.prepareStatement(query);
 			
@@ -118,7 +128,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 		ResultSet res = null;
 		List<Employee> empList = null;
 		
-		try(Connection connect = ConnectionUtility.getConnection("samad", "milan")){
+		try(Connection connect = ConnectionUtility.getConnection()){
 			String query = "SELECT * FROM bankapp.employees";
 			st = connect.createStatement();
 			res = st.executeQuery(query);
