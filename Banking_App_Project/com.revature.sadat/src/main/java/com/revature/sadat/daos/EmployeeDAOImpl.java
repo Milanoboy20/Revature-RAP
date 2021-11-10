@@ -15,12 +15,13 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 		ResultSet res = null;
 		
 		try(Connection con = ConnectionUtility.getConnection()){
-			String query = "INSERT INTO bankapp.employees VALUES(2,?,?,?);";
+			String query = "INSERT INTO bankapp.employees VALUES(?,?,?,?);";
 			ps = con.prepareStatement(query);
 			
-			ps.setString(1, emp.getEmp_title());
-			ps.setString(2, emp.getEmp_level());
-			ps.setDouble(3, emp.getEmp_salary());
+			ps.setInt(1, emp.getEmp_ID());
+			ps.setString(2, emp.getEmp_title());
+			ps.setString(3, emp.getEmp_level());
+			ps.setDouble(4, emp.getEmp_salary());
 			
 			ps.executeUpdate();
 			
@@ -49,7 +50,6 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 			res = ps.executeQuery();
 			
 			while(res.next()) {
-//				emp = new Employee();
 				emp.setEmp_ID(res.getInt(1));
 				emp.setEmp_title(res.getString(2));
 				emp.setEmp_level(res.getString(3));
@@ -140,6 +140,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 				emp.setEmp_title(res.getString(2));
 				emp.setEmp_level(res.getString(3));
 				emp.setEmp_salary(res.getDouble(4));
+				emp.setLogin_ID(res.getInt(1));
 				
 				empList.add(emp);
 			}

@@ -11,10 +11,10 @@ public class Employee {
 		super();
 	}				
 
-	public Employee(Integer emp_ID, Double emp_salary, String emp_title, String emp_level) {
+	public Employee(Integer login_ID, Integer emp_ID, Double emp_salary, String emp_title, String emp_level) {
 		super();
 		this.emp_ID = emp_ID;
-//		this.login_ID = login_ID;
+		this.login_ID = login_ID;
 		this.emp_salary = emp_salary;
 		this.emp_title = emp_title;
 		this.emp_level = emp_level;

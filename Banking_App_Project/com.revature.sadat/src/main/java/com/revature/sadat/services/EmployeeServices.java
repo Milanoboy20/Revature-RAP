@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.revature.sadat.models.Customer;
 import com.revature.sadat.models.EmpActions;
+import com.revature.sadat.models.Employee;
 import com.revature.sadat.models.Login;
 import com.revature.sadat.models.NewEmployee;
 import com.revature.sadat.utilities.ConnectionUtility;
@@ -116,6 +117,34 @@ public class EmployeeServices {
 		return lg;
 	}
 	
+	
+	
+	public Login empLogin(Integer actNum) {
+		PreparedStatement ps = null;
+		ResultSet res = null;
+		Login lg = null;		
+		
+		try(Connection con = ConnectionUtility.getConnection()){
+			String query = "SELECT * FROM bankapp.newEmp WHERE actnum=?";
+			
+			ps = con.prepareStatement(query);
+			ps.setInt(1, actNum);			
+			res = ps.executeQuery();			
+			
+			while(res.next()) {
+				lg = new Login();
+				lg.setUserName(res.getString(6));
+				lg.setPassword(res.getString(7));				
+			}	
+		}
+		catch(SQLException e) {
+			e.printStackTrace();			
+		}			
+		return lg;
+	}
+	
+	
+	
 	public Customer getCustomer(Integer actNum) {
 		PreparedStatement ps = null;
 		PreparedStatement ps2 = null;
@@ -156,6 +185,50 @@ public class EmployeeServices {
 			System.out.println("Error!");
 		}		
 		return cus;	
+	}
+	
+	
+	public Employee getEmp(Integer actNum) {
+		PreparedStatement ps = null;
+		PreparedStatement ps2 = null;
+		ResultSet res = null;
+		ResultSet res2 = null;
+		Employee emp = null;
+		
+		try(Connection con = ConnectionUtility.getConnection()){
+			String query = "SELECT * FROM bankapp.newEmp WHERE actnum=?";
+			
+			ps = con.prepareStatement(query);
+			ps.setInt(1, actNum);			
+			res = ps.executeQuery();
+			String user = "";
+			String pass = "";
+			
+			while(res.next()) {
+				emp = new Employee();
+				emp.setEmp_title(res.getString(3));
+				emp.setEmp_level(res.getString(4));
+				emp.setEmp_salary(res.getDouble(5));				
+				user += res.getString(6);
+				pass += res.getString(7);
+			}
+			
+			String query2 = "SELECT * FROM bankapp.login WHERE username=? AND psswd=?";
+			
+			ps2 = con.prepareStatement(query2);
+			ps2.setString(1, user);
+			ps2.setString(2, pass);			
+			
+			res2 = ps2.executeQuery();
+			while(res2.next()) {
+				emp.setEmp_ID(res2.getInt(1));
+			}			
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+			System.out.println("Error!");
+		}		
+		return emp;	
 	}
 	
 	
@@ -237,7 +310,7 @@ public class EmployeeServices {
 	public List<NewEmployee> allNewEmpAccounts(){
 		PreparedStatement ps = null;
 		ResultSet res = null;
-		List<NewEmployee> emps = null;
+		List<NewEmployee> emps = new ArrayList<NewEmployee>();
 		NewEmployee emp = null;
 		
 		try(Connection con = ConnectionUtility.getConnection()){
@@ -256,6 +329,7 @@ public class EmployeeServices {
 				emp.setPassword(res.getString(7));
 				emp.setStatus(res.getString(8));
 				emp.setDate(res.getDate(9));
+				
 				emps.add(emp);
 			}			
 		}

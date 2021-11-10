@@ -3,13 +3,13 @@ package com.revature.sadat;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.*;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import com.revature.sadat.models.*;
 
-class EmployeeTest {
+public class EmployeeTest {
 
-	private Employee emp = new Employee(1,500000.00, "Admin", "Level 5");
+	private Employee emp = new Employee(2, 1,500000.00, "Admin", "Level 5");
 	
 	@BeforeClass
 	public static void beforClass() {
@@ -24,7 +24,7 @@ class EmployeeTest {
 	@Before
 	public void before() {
 		System.out.println("Before Test!");
-		emp = new Employee(1,500000.00, "Admin", "Level 5");
+		emp = new Employee(2, 1,500000.00, "Admin", "Level 5");
 	}
 	
 	@After

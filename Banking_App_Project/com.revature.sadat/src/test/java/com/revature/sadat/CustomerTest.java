@@ -6,12 +6,12 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import com.revature.sadat.models.Customer;
 
 
-class CustomerTest {
+public class CustomerTest {
 	
 	private Customer cus = new Customer(3, "1234ABC", 1234);
 	

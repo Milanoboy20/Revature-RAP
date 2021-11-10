@@ -1,0 +1,12 @@
+2021-11-09 13:54:15  TRACE com.revature.sadat.logging.BankAppLogger:17 TRACE LOG!
+2021-11-09 13:54:15  DEBUG com.revature.sadat.logging.BankAppLogger:18 DEBUG LOG!
+2021-11-09 13:54:15  INFO com.revature.sadat.logging.BankAppLogger:19 INFO LOG!
+2021-11-09 13:54:15  WARN com.revature.sadat.logging.BankAppLogger:20 WARN LOG!
+2021-11-09 13:54:15  ERROR com.revature.sadat.logging.BankAppLogger:21 ERROR LOG!
+2021-11-09 13:54:15  FATAL com.revature.sadat.logging.BankAppLogger:22 FATAL LOG!
+2021-11-09 19:38:58  TRACE com.revature.sadat.logging.BankAppLogger:17 TRACE LOG!
+2021-11-09 19:38:58  DEBUG com.revature.sadat.logging.BankAppLogger:18 DEBUG LOG!
+2021-11-09 19:38:58  INFO com.revature.sadat.logging.BankAppLogger:19 INFO LOG!
+2021-11-09 19:38:58  WARN com.revature.sadat.logging.BankAppLogger:20 WARN LOG!
+2021-11-09 19:38:58  ERROR com.revature.sadat.logging.BankAppLogger:21 ERROR LOG!
+2021-11-09 19:38:58  FATAL com.revature.sadat.logging.BankAppLogger:22 FATAL LOG!

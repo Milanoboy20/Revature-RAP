@@ -6,18 +6,19 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 
 import com.revature.sadat.models.SystemAdmin;
 
-class AdminTest {
+public class AdminTest {
 
-	private SystemAdmin adm = new SystemAdmin(1, 500000.00, "Level 5");
+	private SystemAdmin adm ;//= new SystemAdmin(1, 500000.00, "Level 5");
 	
 	@BeforeClass
 	public static void beforClass() {
-		System.out.println("Before Mlass Method!");
+		System.out.println("Before Class Method!");
 	}
 	
 	@AfterClass
