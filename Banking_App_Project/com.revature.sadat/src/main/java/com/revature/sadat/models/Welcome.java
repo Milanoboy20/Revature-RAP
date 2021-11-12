@@ -65,6 +65,9 @@ public class Welcome {
 //					System.out.println("Verified!");
 					uLog = lg.selectByUsername(user, pass);
 					cus = cdao.selectByID(uLog.getLoginID());
+					
+					String name = adao.selectByID(uLog.getUserID()).getName();										
+					System.out.println("\nHello " + name + "!");
 					customer(cus);
 					
 				} else if(auser.getTitle().equalsIgnoreCase("Employee")) {
@@ -73,22 +76,25 @@ public class Welcome {
 					emp = edao.selectByID(uLog.getLoginID());
 					
 					String name = adao.selectByID(uLog.getUserID()).getName();										
-					System.out.println("Hello " + name + "!");
+					System.out.println("\nHello " + name + "!");
 					employee(emp, user, pass);
 					
 				}else if(auser.getTitle().equalsIgnoreCase("System Admin")) {
 					uLog = lg.selectByUsername(user, pass);
 					adm = admin.selectByID(uLog.getLoginID());
 					emp = edao.selectByID(uLog.getLoginID());
+					
+					String name = adao.selectByID(uLog.getUserID()).getName();										
+					System.out.println("\nHello " + name + "!");
 					admin(emp, user, pass);
 					
 				} else {
-					System.out.println("Please register for an account.\n\n");
+					System.out.println("\nPlease register for an account.\n\n");
 					welcome();
 				}
 			} 
 			else {
-				System.out.println("Invalid username/password. \nPlease enter a valid credential");
+				System.out.println("\nInvalid username/password. \nPlease enter a valid credential");
 				login();
 			}											
 	}
@@ -142,11 +148,17 @@ public class Welcome {
 		amount = scnr.nextDouble();
 		System.out.println("\nEnter  Account ID: ");
 		id = scnr.nextInt();
+//		System.out.println(cus + "\n");
 		
-		if(((amount < 0) || (serv.getAccount(id) == null)) && ((serv.getAccount(id).getCus_ID()) != (cus.getSocialSec()))) {
+		if(((amount < 0) || (serv.getAccount(id) == null))) {
 			System.out.println("Invalid amount/account. \nPlease enter a valid amount and account.");
 			deposit(cus);
-		}else {
+		}
+		else if(!(serv.getAccount(id).getCus_ID().equals(cus.getSocialSec())) ) {
+			System.out.println("\nWrong Account ID. \nPlease enter a valid ID.");
+			deposit(cus);
+		}
+		else {
 			if(serv.deposit(cus.getSocialSec(), id, amount) == true)
 			System.out.println("\nBalance is now: $" + serv.getAccount(id).getStartBalance());
 		}
@@ -172,10 +184,19 @@ public class Welcome {
 		System.out.println("Enter  Account ID: ");
 		id = scnr.nextInt();
 		
-		if((amount < 0 || serv.getAccount(id) == null) && serv.getAccount(id).getAcc_ID() != id) {
-			System.out.println("Invalid amount/account. \nPlease enter a valid amount and account.");
+		if((amount < 0 || serv.getAccount(id) == null)) {
+			System.out.println("\nInvalid amount/account. \nPlease enter a valid amount and account.");
 			withdraw(cus);
-		}else {
+		} 
+		else if(!(serv.getAccount(id).getCus_ID().equals(cus.getSocialSec())) ) {
+			System.out.println("Wrong Account ID. \nPlease enter a valid ID.");
+			withdraw(cus);
+		}
+		else if(serv.getAccount(id).getStartBalance() - amount < 0) {
+			System.out.println("\nPlease withdraw amount cannot exceed current balance.");
+			withdraw(cus);
+		}
+		else {
 			if(serv.withdraw(cus.getSocialSec(), id, amount) == true)
 			System.out.println("Balance is now: $" + serv.getAccount(id).getStartBalance());
 		}
@@ -555,20 +576,10 @@ public class Welcome {
 	 * SYSTEM ADMIN SECTION
 	 */
 	public static void admin(Employee emp, String user, String pass) {
-		EmployeeDAO edao = new EmployeeDAOImpl();
-		EmployeeServices eserv = new EmployeeServices();
-		SystemAdminDAO sdao = new SysAdminDAOImpl();
-		SystemAdmin admin = null;
-		CustomerDAO cdao = new CustomerDAOImpl();
-		Customer cus = null;
 		LoginDAO ldao = new LoginDAOImpl();
 		Login lg = null;
 		lg = ldao.selectByUsername(user, pass);
-//		Employee emp = edao.selectByID(lg.getUserID());
-		AppUserDAO adao = new AppUserDAOImpl();
-		String name = adao.selectByID(lg.getUserID()).getName();
-		
-		System.out.println("Hello " + name + "!\n");
+
 		System.out.println("\n1.Employee Ops     \n2.Customer Ops      \n3.Logout");
 		int select = scnr.nextInt();
 		
@@ -978,9 +989,11 @@ public class Welcome {
 			String password = scnr.next() + scnr.nextLine();
 			
 			if(emp.newCus(stateID, cus_SS, username, password) == true) {
-				System.out.println("\nWait for 48hrs for your account to be approved.");
+				System.out.println("\nWait 48hrs for your account to be approved.");
+				System.out.println("\nThank you!");
 			} else {
 				System.out.println("Sign up error!");
+				welcome();
 			}
 			
 			System.out.println("\n1.Return to Main      2.Exit");

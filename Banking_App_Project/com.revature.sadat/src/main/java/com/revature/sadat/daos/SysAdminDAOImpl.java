@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.revature.sadat.logging.BankAppLogger;
 import com.revature.sadat.models.Employee;
 import com.revature.sadat.models.SystemAdmin;
 import com.revature.sadat.utilities.ConnectionUtility;
@@ -34,8 +35,12 @@ public class SysAdminDAOImpl implements SystemAdminDAO {
 			e.printStackTrace();
 			return false;
 		}
+		
+		BankAppLogger.getLogger().trace("System admin info added to datatbase.");
 		return true;
 	}
+	
+	
 
 	@Override
 	public SystemAdmin selectByID(Integer id) {
@@ -62,6 +67,7 @@ public class SysAdminDAOImpl implements SystemAdminDAO {
 			e.printStackTrace();
 		}
 		
+		BankAppLogger.getLogger().trace("Admin info retrieved from datatbase.");
 		return adm;
 	}
 
@@ -89,6 +95,7 @@ public class SysAdminDAOImpl implements SystemAdminDAO {
 		
 		return true;		
 	}
+	
 
 	@Override
 	public boolean removeAdmin(Integer id) {
@@ -107,6 +114,7 @@ public class SysAdminDAOImpl implements SystemAdminDAO {
 			return false;
 		}
 		
+		BankAppLogger.getLogger().trace("Admin removed from datatbase.");
 		return true;
 	}
 
@@ -137,6 +145,7 @@ public class SysAdminDAOImpl implements SystemAdminDAO {
 			e.printStackTrace();
 		}
 		
+		BankAppLogger.getLogger().trace("All admins retrieved from datatbase.");
 		return adminList;
 	}
 

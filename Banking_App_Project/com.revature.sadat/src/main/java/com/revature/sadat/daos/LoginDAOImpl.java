@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.revature.sadat.logging.BankAppLogger;
 import com.revature.sadat.models.Employee;
 import com.revature.sadat.models.Login;
 import com.revature.sadat.utilities.ConnectionUtility;
@@ -32,9 +33,12 @@ public class LoginDAOImpl implements LoginDAO {
 			e.printStackTrace();
 			return false;
 		}
+		
+		BankAppLogger.getLogger().trace("Login info for " + lg.getUserName() + ", added to datatbase.");
 		return true;
 	}
 
+	
 	@Override
 	public Login selectByUsername(String username, String password) {
 		PreparedStatement ps = null;
@@ -59,7 +63,9 @@ public class LoginDAOImpl implements LoginDAO {
 		} catch (SQLException e) {
 			System.out.println("Connection Unsuccessful!");
 			e.printStackTrace();
-		}		
+		}	
+		
+		BankAppLogger.getLogger().trace("Login info for "+ log.getUserName() + ", retrieved from datatbase.");
 		return log;
 	}
 	
@@ -88,7 +94,9 @@ public class LoginDAOImpl implements LoginDAO {
 		} catch (SQLException e) {
 			System.out.println("Connection Unsuccessful!");
 			e.printStackTrace();
-		}		
+		}	
+		
+		BankAppLogger.getLogger().trace("Login info for "+ log.getUserName() + ", retrieved from datatbase.");
 		return log;
 	}
 
@@ -136,6 +144,8 @@ public class LoginDAOImpl implements LoginDAO {
 			e.printStackTrace();
 			return false;
 		}		
+		
+		BankAppLogger.getLogger().trace("Login info removed from datatbase.");
 		return true;
 	}
 
@@ -164,7 +174,9 @@ public class LoginDAOImpl implements LoginDAO {
 		} catch (SQLException e){
 			System.out.println("Connection Unsuccessful!");
 			e.printStackTrace();
-		}		
+		}	
+		
+		BankAppLogger.getLogger().trace("All Login info retrieved from datatbase.");
 		return logins;
 	}
 

@@ -4,7 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import com.revature.sadat.logging.BankAppLogger;
 import com.revature.sadat.models.Customer;
 import com.revature.sadat.utilities.ConnectionUtility;
 
@@ -31,6 +31,8 @@ public class CustomerDAOImpl implements CustomerDAO {
 			e.printStackTrace();
 			return false;
 		}
+		
+		BankAppLogger.getLogger().trace("Customer added to datatbase.");
 		return true;
 	}
 	
@@ -61,6 +63,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 			e.printStackTrace();
 		}
 		
+		BankAppLogger.getLogger().trace("Customer: "+ cus.getCus_ID() + ", retrieved from datatbase.");
 		return cus;
 	}
 
@@ -91,7 +94,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 
 	@Override
 	public boolean removeCustomer(Integer id) {
-PreparedStatement ps = null;
+		PreparedStatement ps = null;
 		
 		try(Connection connect = ConnectionUtility.getConnection()){
 			String query = "DELETE FROM bankapp.customers WHERE cus_id=?";
@@ -105,7 +108,7 @@ PreparedStatement ps = null;
 			e.printStackTrace();
 			return false;
 		}
-		
+		BankAppLogger.getLogger().trace("Customer:" + id + " removed from datatbase.");
 		return true;	
 	}
 
@@ -135,6 +138,7 @@ PreparedStatement ps = null;
 			e.printStackTrace();
 		}
 		
+		BankAppLogger.getLogger().trace("All customers retrieved from datatbase.");
 		return cusList;
 	}
 

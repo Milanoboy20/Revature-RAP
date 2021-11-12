@@ -1,9 +1,5 @@
 package com.revature.sadat.services;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 import com.revature.sadat.daos.AppUserDAO;
 import com.revature.sadat.daos.AppUserDAOImpl;
@@ -11,7 +7,7 @@ import com.revature.sadat.daos.LoginDAO;
 import com.revature.sadat.daos.LoginDAOImpl;
 import com.revature.sadat.models.AppUser;
 import com.revature.sadat.models.Login;
-import com.revature.sadat.utilities.ConnectionUtility;
+
 
 public class LoginVerification {
 	
@@ -27,7 +23,9 @@ public class LoginVerification {
 		if(log != null) {
 			auser = adao.selectByID(log.getUserID());
 		} else {
-			System.out.println("Login Failled!");
+			System.out.println("\nLogin Failled!");
+			System.out.println("Username: " + username + " and Password: " + password
+					+ " do not exist.");
 		}
 		
 		return auser;

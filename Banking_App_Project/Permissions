@@ -1,0 +1,23 @@
+create user employee with password 'pass';
+create user samad with password 'milan'; 
+grant all privileges on all tables in schema bankapp to samad;
+grant all privileges on schema bankapp to samad;
+grant all privileges on sequence accID to samad;
+grant all privileges on sequence appusers_user_id_seq to samad;
+grant all privileges on sequence login_login_id_seq to samad;
+grant select, update, insert, delete on bankapp.employees to samad;
+grant select, update, insert, delete on bankapp.appusers to samad;
+grant select, update, insert, delete on bankapp.login to samad;
+grant select, update, insert, delete on bankapp.customers to samad;
+grant select, update, insert, delete on bankapp.activities to samad;
+grant select, update, insert, delete on bankapp.sysadmin to samad;
+
+grant select, update, insert, delete on bankapp.newaccounts to samad;
+grant select, update, insert, delete on bankapp.newemp to samad;
+grant all privileges on sequence actID to samad;
+grant all privileges on sequence emp to samad;
+grant all privileges on sequence newAccounts_actNum_seq to samad;
+
+create user mike with password 'mike';
+grant select, update, insert, delete on bankapp.accounts to samad;
+grant all privileges on bankapp.accounts to mike;

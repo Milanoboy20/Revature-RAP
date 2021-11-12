@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.revature.sadat.logging.BankAppLogger;
 import com.revature.sadat.models.AppUser;
 import com.revature.sadat.models.Employee;
 import com.revature.sadat.utilities.ConnectionUtility;
@@ -36,6 +37,8 @@ public class AppUserDAOImpl implements AppUserDAO{
 			e.printStackTrace();
 			return false;
 		}
+		
+		BankAppLogger.getLogger().trace("App user " + user.getName() + "added to datatbase.");
 		return true;
 	}
 
@@ -66,6 +69,8 @@ public class AppUserDAOImpl implements AppUserDAO{
 			System.out.println("Connection Unsuccessful!");
 			e.printStackTrace();
 		}
+		
+		BankAppLogger.getLogger().trace("App user "+ user.getName() + ", retrieved from datatbase.");
 		
 		return user;
 	}
@@ -118,6 +123,7 @@ public class AppUserDAOImpl implements AppUserDAO{
 			return false;
 		}
 		
+		BankAppLogger.getLogger().trace("App user removed from datatbase.");
 		return true;
 	}
 
@@ -151,6 +157,7 @@ public class AppUserDAOImpl implements AppUserDAO{
 			e.printStackTrace();
 		}
 		
+		BankAppLogger.getLogger().trace("All app users were retrieved from datatbase.");
 		return userList;
 	}
 

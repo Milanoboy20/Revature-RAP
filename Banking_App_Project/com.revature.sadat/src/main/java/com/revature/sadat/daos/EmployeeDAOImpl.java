@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.revature.sadat.logging.BankAppLogger;
 import com.revature.sadat.models.Employee;
 import com.revature.sadat.utilities.ConnectionUtility;
 
@@ -31,6 +32,9 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 			e.printStackTrace();
 			return false;
 		}
+		
+		BankAppLogger.getLogger().trace("Employee: "+ emp.getEmp_ID() + ", inserted into datatbase.");
+		
 		return true;
 		
 	}
@@ -70,6 +74,8 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 			e.printStackTrace();
 		}
 		
+		
+		BankAppLogger.getLogger().trace("Employee: "+ emp.getEmp_ID() + ", retrieved from datatbase.");
 		return emp;
 	}
 
@@ -118,6 +124,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 			return false;
 		}
 		
+		BankAppLogger.getLogger().trace("Employee: "+ id + ", removed from datatbase.");
 		return true;		
 		
 	}
@@ -151,6 +158,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 			e.printStackTrace();
 		}
 		
+		BankAppLogger.getLogger().trace("All employees retrieved from datatbase.");
 		return empList;
 	}
 

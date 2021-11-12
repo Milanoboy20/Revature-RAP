@@ -10,3 +10,97 @@
 2021-11-09 19:38:58  WARN com.revature.sadat.logging.BankAppLogger:20 WARN LOG!
 2021-11-09 19:38:58  ERROR com.revature.sadat.logging.BankAppLogger:21 ERROR LOG!
 2021-11-09 19:38:58  FATAL com.revature.sadat.logging.BankAppLogger:22 FATAL LOG!
+2021-11-10 10:53:08  TRACE com.revature.sadat.logging.BankAppLogger:17 TRACE LOG!
+2021-11-10 10:53:08  DEBUG com.revature.sadat.logging.BankAppLogger:18 DEBUG LOG!
+2021-11-10 10:53:08  INFO com.revature.sadat.logging.BankAppLogger:19 INFO LOG!
+2021-11-10 10:53:08  WARN com.revature.sadat.logging.BankAppLogger:20 WARN LOG!
+2021-11-10 10:53:08  ERROR com.revature.sadat.logging.BankAppLogger:21 ERROR LOG!
+2021-11-10 10:53:08  FATAL com.revature.sadat.logging.BankAppLogger:22 FATAL LOG!
+2021-11-12 12:22:44  TRACE com.revature.sadat.models.BankAppModelsLogger:17 TRACE LOG!
+2021-11-12 12:22:44  DEBUG com.revature.sadat.models.BankAppModelsLogger:18 DEBUG LOG!
+2021-11-12 12:22:44  INFO com.revature.sadat.models.BankAppModelsLogger:19 INFO LOG!
+2021-11-12 12:22:44  WARN com.revature.sadat.models.BankAppModelsLogger:20 WARN LOG!
+2021-11-12 12:22:44  ERROR com.revature.sadat.models.BankAppModelsLogger:21 ERROR LOG!
+2021-11-12 12:22:44  FATAL com.revature.sadat.models.BankAppModelsLogger:22 FATAL LOG!
+2021-11-12 14:36:49  TRACE com.revature.sadat.logging.BankAppLogger:18 TRACE LOG!
+2021-11-12 14:36:49  DEBUG com.revature.sadat.logging.BankAppLogger:19 DEBUG LOG!
+2021-11-12 14:36:49  INFO com.revature.sadat.logging.BankAppLogger:20 INFO LOG!
+2021-11-12 14:36:49  WARN com.revature.sadat.logging.BankAppLogger:21 WARN LOG!
+2021-11-12 14:36:49  ERROR com.revature.sadat.logging.BankAppLogger:22 ERROR LOG!
+2021-11-12 14:36:49  FATAL com.revature.sadat.logging.BankAppLogger:23 FATAL LOG!
+2021-11-12 14:38:46  TRACE com.revature.sadat.logging.BankAppLogger:18 TRACE LOG!
+2021-11-12 14:38:46  DEBUG com.revature.sadat.logging.BankAppLogger:19 DEBUG LOG!
+2021-11-12 14:38:46  INFO com.revature.sadat.logging.BankAppLogger:20 INFO LOG!
+2021-11-12 14:38:46  WARN com.revature.sadat.logging.BankAppLogger:21 WARN LOG!
+2021-11-12 14:38:46  ERROR com.revature.sadat.logging.BankAppLogger:22 ERROR LOG!
+2021-11-12 14:38:46  FATAL com.revature.sadat.logging.BankAppLogger:23 FATAL LOG!
+2021-11-12 14:39:10  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-12 14:39:10  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-12 14:39:10  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-12 14:39:10  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-12 14:39:10  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-12 14:39:10  TRACE com.revature.sadat.daos.SysAdminDAOImpl:70 Admin info retrieved from datatbase.
+2021-11-12 14:39:10  TRACE com.revature.sadat.daos.EmployeeDAOImpl:78 Employee: 1, retrieved from datatbase.
+2021-11-12 14:39:10  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-12 14:39:10  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-12 14:39:52  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 14:39:52  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-12 14:39:53  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 14:39:53  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-12 14:39:53  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 14:39:53  TRACE com.revature.sadat.daos.EmployeeDAOImpl:78 Employee: 8, retrieved from datatbase.
+2021-11-12 14:39:53  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-12 14:39:53  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 14:40:09  TRACE com.revature.sadat.daos.CustomerDAOImpl:141 All customers retrieved from datatbase.
+2021-11-12 14:42:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 14:42:33  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for james, retrieved from datatbase.
+2021-11-12 14:42:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 14:42:33  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user James Taylor, retrieved from datatbase.
+2021-11-12 14:42:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 14:42:33  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for james, retrieved from datatbase.
+2021-11-12 14:42:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 14:42:33  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user James Taylor, retrieved from datatbase.
+2021-11-12 14:42:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 14:42:33  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for james, retrieved from datatbase.
+2021-11-12 14:42:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 14:42:33  TRACE com.revature.sadat.daos.CustomerDAOImpl:66 Customer: 3, retrieved from datatbase.
+2021-11-12 14:42:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 14:42:33  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user James Taylor, retrieved from datatbase.
+2021-11-12 15:30:37  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:30:37  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 15:30:37  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:30:37  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-12 15:30:37  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:30:38  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 15:30:38  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:30:38  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-12 15:30:38  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:30:38  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 15:30:38  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:30:38  TRACE com.revature.sadat.daos.EmployeeDAOImpl:78 Employee: 8, retrieved from datatbase.
+2021-11-12 15:30:38  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:30:38  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-12 15:30:38  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:30:38  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 15:32:16  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:32:16  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 15:32:16  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:32:16  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-12 15:32:16  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:32:16  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 15:32:16  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:32:16  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-12 15:32:16  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:32:16  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 15:32:16  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:32:16  TRACE com.revature.sadat.daos.EmployeeDAOImpl:78 Employee: 8, retrieved from datatbase.
+2021-11-12 15:32:16  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:32:16  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-12 15:32:16  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:32:16  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 15:32:53  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:32:53  TRACE com.revature.sadat.daos.CustomerDAOImpl:141 All customers retrieved from datatbase.
+2021-11-12 15:33:16  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:33:16  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-12 15:33:22  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-12 15:33:22  TRACE com.revature.sadat.daos.CustomerDAOImpl:141 All customers retrieved from datatbase.

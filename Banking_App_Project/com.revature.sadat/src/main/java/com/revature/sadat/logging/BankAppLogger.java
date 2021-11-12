@@ -12,6 +12,7 @@ public class BankAppLogger {
 		logMethod();
 
 	}
+		
 	
 	public static void logMethod() {
 		log.trace("TRACE LOG!");
