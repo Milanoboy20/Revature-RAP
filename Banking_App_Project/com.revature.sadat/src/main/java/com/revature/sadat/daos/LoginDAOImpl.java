@@ -65,7 +65,7 @@ public class LoginDAOImpl implements LoginDAO {
 			e.printStackTrace();
 		}	
 		
-		BankAppLogger.getLogger().trace("Login info for "+ log.getUserName() + ", retrieved from datatbase.");
+		BankAppLogger.getLogger().trace("Login info was retrieved from datatbase.");
 		return log;
 	}
 	

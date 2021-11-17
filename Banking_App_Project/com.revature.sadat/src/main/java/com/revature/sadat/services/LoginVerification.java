@@ -22,7 +22,8 @@ public class LoginVerification {
 		
 		if(log != null) {
 			auser = adao.selectByID(log.getUserID());
-		} else {
+		}
+		else {
 			System.out.println("\nLogin Failled!");
 			System.out.println("Username: " + username + " and Password: " + password
 					+ " do not exist.");

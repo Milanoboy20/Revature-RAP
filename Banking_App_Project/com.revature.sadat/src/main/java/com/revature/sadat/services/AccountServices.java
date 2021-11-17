@@ -6,8 +6,6 @@ import java.util.List;
 
 import com.revature.sadat.models.Account;
 import com.revature.sadat.models.Activity;
-import com.revature.sadat.models.Customer;
-import com.revature.sadat.models.Employee;
 import com.revature.sadat.utilities.ConnectionUtility;
 
 public class AccountServices {
@@ -249,7 +247,6 @@ public class AccountServices {
 			System.out.println("Connection Unsuccessful!");
 			e.printStackTrace();
 		}	
-//		System.out.println(ac);
 		return ac;
 	}
 	

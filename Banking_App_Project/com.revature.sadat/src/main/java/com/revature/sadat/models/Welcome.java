@@ -13,7 +13,7 @@ public class Welcome {
 	public static Scanner scnr = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		System.out.println("Welcome to BankApp!");
+		System.out.println("Welcome to BankApp!\n");
 		welcome();
 		
 	}
