@@ -12,7 +12,7 @@ public class ConnectionUtility {
 		String user     = "samad";
 		String password = "milan";
 		
-		BankAppLogger.getLogger().trace("Connection to datatbase established.");
+		BankAppLogger.getLogger().trace("Connection to database established.");
 		
 		return DriverManager.getConnection(url, user, password);
 		

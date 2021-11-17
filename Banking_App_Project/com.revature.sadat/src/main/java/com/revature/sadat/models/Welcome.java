@@ -16,26 +16,27 @@ public class Welcome {
 		System.out.println("Welcome to BankApp!");
 		welcome();
 		
-
 	}
 	
 	
-	
+	//Welcome screen
 	public static void welcome() {		
 		System.out.println("1.Login     2.SignUp");
 		int select = scnr.nextInt();		
 		
 		if(select == 1) {
 			login();
-		} else if(select == 2) {
+		} 
+		else if(select == 2) {
 			signUp();
-		} else {
+		} 
+		else {
 			System.out.println("\nInvalid option!\nPlease select an option number.");
 			welcome();
 		}
 	}
 	
-	
+	//Login process/verification
 	public static void login() {
 		String user = "";
 		String pass = "";
@@ -43,8 +44,7 @@ public class Welcome {
 		user += scnr.next() + scnr.nextLine();
 		
 		System.out.println("Enter password:");
-		pass += scnr.next() + scnr.nextLine();
-		
+		pass += scnr.next() + scnr.nextLine();		
 		
 		LoginDAO lg           = new LoginDAOImpl();
 		Login uLog            = null;
@@ -62,16 +62,15 @@ public class Welcome {
 			if(log.verify(user, pass) != null) {
 				auser = log.verify(user, pass);
 				if(auser.getTitle().equalsIgnoreCase("Customer")) {
-//					System.out.println("Verified!");
 					uLog = lg.selectByUsername(user, pass);
 					cus = cdao.selectByID(uLog.getLoginID());
 					
 					String name = adao.selectByID(uLog.getUserID()).getName();										
 					System.out.println("\nHello " + name + "!");
-					customer(cus);
-					
-				} else if(auser.getTitle().equalsIgnoreCase("Employee")) {
-//					System.out.println("Verified!");
+					customer(cus);					
+				} 
+				
+				else if(auser.getTitle().equalsIgnoreCase("Employee")) {
 					uLog = lg.selectByUsername(user, pass);
 					emp = edao.selectByID(uLog.getLoginID());
 					
@@ -79,7 +78,9 @@ public class Welcome {
 					System.out.println("\nHello " + name + "!");
 					employee(emp, user, pass);
 					
-				}else if(auser.getTitle().equalsIgnoreCase("System Admin")) {
+				} 
+				
+				else if(auser.getTitle().equalsIgnoreCase("System Admin")) {
 					uLog = lg.selectByUsername(user, pass);
 					adm = admin.selectByID(uLog.getLoginID());
 					emp = edao.selectByID(uLog.getLoginID());
@@ -139,6 +140,7 @@ public class Welcome {
 
 	}
 	
+	
 	public static void deposit(Customer cus) {
 		AccountServices serv = new AccountServices();
 		Double amount;
@@ -148,7 +150,6 @@ public class Welcome {
 		amount = scnr.nextDouble();
 		System.out.println("\nEnter  Account ID: ");
 		id = scnr.nextInt();
-//		System.out.println(cus + "\n");
 		
 		if(((amount < 0) || (serv.getAccount(id) == null))) {
 			System.out.println("Invalid amount/account. \nPlease enter a valid amount and account.");
@@ -173,6 +174,7 @@ public class Welcome {
 			welcome();
 		}
 	}
+	
 	
 	public static void withdraw(Customer cus) {
 		AccountServices serv = new AccountServices();
@@ -211,6 +213,7 @@ public class Welcome {
 			welcome();
 		}
 	}
+	
 	
 	public static void transfer(Customer cus) {
 		AccountServices serv = new AccountServices();
@@ -257,9 +260,9 @@ public class Welcome {
 				System.out.println(serv.allAccounts(cus.getSocialSec()).get(i));
 			}
 		}					
-		delete(cus);
-		
+		delete(cus);		
 	}
+	
 	
 	public static void delete(Customer cus) {
 		AccountServices serv = new AccountServices();
@@ -278,8 +281,7 @@ public class Welcome {
 			if(serv.deleteAccount(id) == true) {
 				System.out.println("Account " + id + " has been removed." );
 				delete(cus);
-			}
-			
+			}			
 		}
 	}
 	
@@ -358,9 +360,6 @@ public class Welcome {
 	}
 	
 	public static void employee(Employee emp, String user, String pass) {
-		LoginDAO ldao = new LoginDAOImpl();
-		Login lg = null;
-		lg = ldao.selectByUsername(user, pass);
 
 		System.out.println("\n1.Actions     2.Customers      3.Logout");
 		int select = scnr.nextInt();
@@ -379,6 +378,7 @@ public class Welcome {
 		}
 	}
 	
+	
 	public static void menu2(Employee emp, String user, String pass) {
 		System.out.println("\n1.Main Menu     2.Previous Menu     3.Logout");
 		int next = scnr.nextInt();
@@ -393,6 +393,7 @@ public class Welcome {
 			welcome();
 		}			
 	}
+	
 	
 	public static void cusActionsMenu(Employee emp, String user, String pass) {
 		System.out.println("\n1.View All Customers     \n2.Check Customer Account Balance    \n3.Create Customer Account\n"
@@ -415,14 +416,12 @@ public class Welcome {
 		}
 	}
 	
+	
 	public static void cusActions(Employee emp, String user, String pass) {
-		EmployeeDAO edao = new EmployeeDAOImpl();
 		EmployeeServices eserv = new EmployeeServices();
 		CustomerDAO cdao = new CustomerDAOImpl();
 		Customer cus = null;
 		LoginDAO ldao = new LoginDAOImpl();
-		Login lg = null;
-		lg = ldao.selectByUsername(user, pass);
 		AppUserDAO adao = new AppUserDAOImpl();
 		
 		System.out.println("All customer actions.");
@@ -538,6 +537,7 @@ public class Welcome {
 		}
 	}
 	
+	
 	public static void checkBalance() {
 		AccountServices serv = new AccountServices();
 		
@@ -576,9 +576,6 @@ public class Welcome {
 	 * SYSTEM ADMIN SECTION
 	 */
 	public static void admin(Employee emp, String user, String pass) {
-		LoginDAO ldao = new LoginDAOImpl();
-		Login lg = null;
-		lg = ldao.selectByUsername(user, pass);
 
 		System.out.println("\n1.Employee Ops     \n2.Customer Ops      \n3.Logout");
 		int select = scnr.nextInt();
@@ -593,6 +590,7 @@ public class Welcome {
 		}
 		
 	}
+	
 	
 	public static void cusActionsMenuAdm(Employee emp, String user, String pass) {
 		System.out.println("\n1.View All Customers     \n2.Check Customer Account Balance    \n3.Create Customer Account\n"
@@ -614,6 +612,7 @@ public class Welcome {
 			menu2Adm(emp, user, pass);
 		}
 	}
+	
 	
 	public static void empActionsMenuAdm(Employee emp, String user, String pass) {
 		System.out.println("\n1.View All Employees      2.Prev Menu      3.Main Menu");
@@ -656,6 +655,7 @@ public class Welcome {
 			admin(emp, user, pass);
 		}
 	}
+	
 	
 	public static void empViewAdm(Employee emp, String user, String pass) {	
 		EmployeeDAO edao = new EmployeeDAOImpl();
@@ -702,8 +702,7 @@ public class Welcome {
 		}
 	}
 			
-	
-	
+		
 	public static void empMenuAdm(Employee emp, String user, String pass) {
 		System.out.println("\n1.Main Menu      2.Prev Menu      3.Logout");
 		int choice = scnr.nextInt();
@@ -717,6 +716,7 @@ public class Welcome {
 		}
 	}
 	
+	
 	public static void empMenuAdm2(Employee emp, String user, String pass) {
 		System.out.println("\n1.Main Menu      2.Prev Menu      3.Logout");
 		int choice = scnr.nextInt();
@@ -729,6 +729,7 @@ public class Welcome {
 			empAdmin2(emp, user, pass);
 		}
 	}
+	
 	
 	public static void menu2Adm(Employee emp, String user, String pass) {
 		System.out.println("\n1.Main Menu     2.Previous Menu     3.Logout");
@@ -747,9 +748,6 @@ public class Welcome {
 	
 	
 	public static void empAdmin(Employee emp, String user, String pass) {
-		LoginDAO ldao = new LoginDAOImpl();
-		Login lg = null;
-		lg = ldao.selectByUsername(user, pass);
 
 		System.out.println("\n1.Actions     2.Customers      3.Previous Menu"
 				+ "\n4.Logout");
@@ -773,10 +771,8 @@ public class Welcome {
 		}
 	}
 	
-	public static void empAdmin2(Employee emp, String user, String pass) {
-		LoginDAO ldao = new LoginDAOImpl();
-		Login lg = null;
-		lg = ldao.selectByUsername(user, pass);
+	
+	public static void empAdmin2(Employee emp, String user, String pass) {		
 
 		System.out.println("\n1.Actions     2.Employees     3.Previous Menu"
 				+ "\n4.Logout");
@@ -801,13 +797,12 @@ public class Welcome {
 	}
 	
 	
+	//Customer addition to database
 	public static void approveCus(Employee emp, String user, String pass) {
 		EmployeeServices eserv = new EmployeeServices();
 		CustomerDAO cdao = new CustomerDAOImpl();	
 		Customer cus = null;
 		LoginDAO ldao = new LoginDAOImpl();
-		Login lg = null;
-		lg = ldao.selectByUsername(user, pass);
 		AppUserDAO adao = new AppUserDAOImpl();
 		
 		System.out.println("All customer actions.");
@@ -864,14 +859,12 @@ public class Welcome {
 	
 	
 	
-	//Employee addition
+	//Employee addition to database
 	public static void approveEmp(Employee emp, String user, String pass) {
 		EmployeeServices eserv = new EmployeeServices();
 		EmployeeDAO edao = new EmployeeDAOImpl();
 		Employee newEmp = null;
 		LoginDAO ldao = new LoginDAOImpl();
-		Login lg = null;
-		lg = ldao.selectByUsername(user, pass);
 		AppUserDAO adao = new AppUserDAOImpl();
 		
 		System.out.println("All Employee actions.\n\n");
@@ -936,7 +929,7 @@ public class Welcome {
 	
 	
 	/*
-	 * SIGN UP SECTION
+	 * SIGN UP SECTION/PROCESS
 	 */
 	public static void signUp() {
 		AppUserDAO adao = new AppUserDAOImpl();
@@ -975,6 +968,7 @@ public class Welcome {
 		
 		System.out.println("\nApply for a: \n1.Customer Account    2.Employee Account");
 		int select = scnr.nextInt();
+		
 		if(select == 1) {
 			System.out.println("\nEnter you State ID:");
 			String stateID = scnr.next() + scnr.nextLine();
@@ -992,8 +986,9 @@ public class Welcome {
 				System.out.println("\nWait 48hrs for your account to be approved.");
 				System.out.println("\nThank you!");
 			} else {
-				System.out.println("Sign up error!");
-				welcome();
+				System.out.println("\nSign up error! "
+						+ "\nPlease start the process again");
+				signUp();
 			}
 			
 			System.out.println("\n1.Return to Main      2.Exit");
@@ -1005,6 +1000,7 @@ public class Welcome {
 			} 
 			welcome();
 		} 
+		
 		else if(select == 2) {
 			System.out.println("Title: ");
 			String empTitle = scnr.nextLine() + scnr.nextLine();
@@ -1025,7 +1021,9 @@ public class Welcome {
 				System.out.println("\nYour account will be approved by an employee shortly. "
 						+ "\nThank you!");
 			} else {
-				System.out.println("Sign up error!");				
+				System.out.println("\nSign up error!");
+				System.out.println("\nPlease start the process");
+				signUp();
 			}
 			
 			

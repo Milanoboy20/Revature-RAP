@@ -104,3 +104,278 @@
 2021-11-12 15:33:16  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
 2021-11-12 15:33:22  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
 2021-11-12 15:33:22  TRACE com.revature.sadat.daos.CustomerDAOImpl:141 All customers retrieved from datatbase.
+2021-11-15 12:45:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:33  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for james, retrieved from datatbase.
+2021-11-15 12:45:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:33  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user James Taylor, retrieved from datatbase.
+2021-11-15 12:45:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:33  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for james, retrieved from datatbase.
+2021-11-15 12:45:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:33  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user James Taylor, retrieved from datatbase.
+2021-11-15 12:45:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:33  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for james, retrieved from datatbase.
+2021-11-15 12:45:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:33  TRACE com.revature.sadat.daos.CustomerDAOImpl:66 Customer: 3, retrieved from datatbase.
+2021-11-15 12:45:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:33  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user James Taylor, retrieved from datatbase.
+2021-11-15 12:45:38  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:38  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:38  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:38  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:38  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:38  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:47  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:47  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:47  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:47  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:47  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:47  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:47  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:47  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:45:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:32  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:32  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:32  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:32  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:52  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:52  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:53  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:56  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:56  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:56  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:56  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:56  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:56  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:56  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:46:56  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:17  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:17  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-15 12:47:17  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:17  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-15 12:47:17  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:17  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-15 12:47:17  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:17  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-15 12:47:17  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:17  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-15 12:47:17  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:17  TRACE com.revature.sadat.daos.SysAdminDAOImpl:70 Admin info retrieved from datatbase.
+2021-11-15 12:47:17  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:17  TRACE com.revature.sadat.daos.EmployeeDAOImpl:78 Employee: 1, retrieved from datatbase.
+2021-11-15 12:47:17  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:17  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-15 12:47:17  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:17  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-15 12:47:19  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:19  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-15 12:47:28  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:28  TRACE com.revature.sadat.daos.EmployeeDAOImpl:161 All employees retrieved from datatbase.
+2021-11-15 12:47:36  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:36  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-15 12:47:39  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-15 12:47:39  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-15 12:47:39  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:36:59  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:36:59  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:36:59  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:36:59  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-17 09:36:59  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:36:59  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:36:59  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:37:00  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-17 09:37:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:37:00  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:37:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:37:00  TRACE com.revature.sadat.daos.SysAdminDAOImpl:70 Admin info retrieved from datatbase.
+2021-11-17 09:37:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:37:00  TRACE com.revature.sadat.daos.EmployeeDAOImpl:78 Employee: 1, retrieved from datatbase.
+2021-11-17 09:37:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:37:00  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-17 09:37:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:37:00  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:37:33  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:37:33  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:37:35  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:37:35  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:37:35  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:38:15  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:38:15  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:38:16  TRACE com.revature.sadat.daos.AppUserDAOImpl:160 All app users were retrieved from datatbase.
+2021-11-17 09:38:35  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:38:35  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:38:35  TRACE com.revature.sadat.daos.LoginDAOImpl:37 Login info for maryb, added to datatbase.
+2021-11-17 09:38:35  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:38:35  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:38:35  TRACE com.revature.sadat.daos.EmployeeDAOImpl:36 Employee: 10, inserted into datatbase.
+2021-11-17 09:39:12  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:39:12  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:39:16  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:39:16  TRACE com.revature.sadat.daos.EmployeeDAOImpl:161 All employees retrieved from datatbase.
+2021-11-17 09:39:37  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:39:37  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:39:39  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:39:39  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:39:41  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:39:41  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:39:45  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:39:45  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:39:45  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:03  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:03  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-17 09:40:03  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:03  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-17 09:40:03  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:03  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-17 09:40:03  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:03  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-17 09:40:03  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:03  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-17 09:40:03  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:03  TRACE com.revature.sadat.daos.EmployeeDAOImpl:78 Employee: 8, retrieved from datatbase.
+2021-11-17 09:40:03  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:03  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-17 09:40:03  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:03  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-17 09:40:08  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:08  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-17 09:40:08  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:24  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:25  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-17 09:40:25  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:25  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-17 09:40:25  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:25  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-17 09:40:25  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:25  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-17 09:40:25  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:25  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-17 09:40:25  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:25  TRACE com.revature.sadat.daos.EmployeeDAOImpl:78 Employee: 8, retrieved from datatbase.
+2021-11-17 09:40:25  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:25  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Samuel Koi, retrieved from datatbase.
+2021-11-17 09:40:25  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:40:25  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for samkoi, retrieved from datatbase.
+2021-11-17 09:41:40  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:41:40  TRACE com.revature.sadat.daos.CustomerDAOImpl:141 All customers retrieved from datatbase.
+2021-11-17 09:42:07  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:47:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:47:58  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:47:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:47:58  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-17 09:47:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:47:58  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:47:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:47:58  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-17 09:47:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:47:58  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 09:47:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:47:58  TRACE com.revature.sadat.daos.SysAdminDAOImpl:70 Admin info retrieved from datatbase.
+2021-11-17 09:47:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:47:58  TRACE com.revature.sadat.daos.EmployeeDAOImpl:78 Employee: 1, retrieved from datatbase.
+2021-11-17 09:47:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:47:58  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-17 09:48:09  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:48:09  TRACE com.revature.sadat.daos.EmployeeDAOImpl:161 All employees retrieved from datatbase.
+2021-11-17 09:48:24  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:56:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:56:48  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for james, retrieved from datatbase.
+2021-11-17 09:56:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:56:48  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user James Taylor, retrieved from datatbase.
+2021-11-17 09:56:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:56:48  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for james, retrieved from datatbase.
+2021-11-17 09:56:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:56:48  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user James Taylor, retrieved from datatbase.
+2021-11-17 09:56:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:56:48  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for james, retrieved from datatbase.
+2021-11-17 09:56:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:56:48  TRACE com.revature.sadat.daos.CustomerDAOImpl:66 Customer: 3, retrieved from datatbase.
+2021-11-17 09:56:48  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:56:48  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user James Taylor, retrieved from datatbase.
+2021-11-17 09:57:06  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:57:06  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:57:06  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:57:06  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:57:06  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:57:06  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:57:06  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:57:06  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:58:30  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:58:36  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:58:36  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:58:36  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:58:36  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:58:36  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 09:58:36  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to datatbase established.
+2021-11-17 10:16:10  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:10  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for benneyboi, retrieved from datatbase.
+2021-11-17 10:16:10  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:10  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Bennet A, retrieved from datatbase.
+2021-11-17 10:16:10  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:10  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for benneyboi, retrieved from datatbase.
+2021-11-17 10:16:10  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:10  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Bennet A, retrieved from datatbase.
+2021-11-17 10:16:10  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:10  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for benneyboi, retrieved from datatbase.
+2021-11-17 10:16:10  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:10  TRACE com.revature.sadat.daos.CustomerDAOImpl:66 Customer: 9, retrieved from datatbase.
+2021-11-17 10:16:10  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:10  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Bennet A, retrieved from datatbase.
+2021-11-17 10:16:13  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:13  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:13  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:13  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:35  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:35  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:35  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:52  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:52  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:52  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:52  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:16:58  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:17:04  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:17:04  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:17:04  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:17:04  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:17:04  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:17:04  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:17:04  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:17:05  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:17:05  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:17:05  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:17:05  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:17:05  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:19:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:19:00  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 10:19:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:19:00  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-17 10:19:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:19:00  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 10:19:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:19:00  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-17 10:19:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:19:00  TRACE com.revature.sadat.daos.LoginDAOImpl:68 Login info for milanoboy, retrieved from datatbase.
+2021-11-17 10:19:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:19:00  TRACE com.revature.sadat.daos.SysAdminDAOImpl:70 Admin info retrieved from datatbase.
+2021-11-17 10:19:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:19:00  TRACE com.revature.sadat.daos.EmployeeDAOImpl:78 Employee: 1, retrieved from datatbase.
+2021-11-17 10:19:00  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
+2021-11-17 10:19:00  TRACE com.revature.sadat.daos.AppUserDAOImpl:73 App user Abdul Samad, retrieved from datatbase.
+2021-11-17 10:19:05  TRACE com.revature.sadat.utilities.ConnectionUtility:15 Connection to database established.
